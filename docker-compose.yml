@@ -13,11 +13,11 @@ services:
       MYSQL_PASSWORD: rakesh
     expose:
       - "3306"
-      - "33060"
+      - "33060" 
   wordpress:
     image: wordpress:latest
     ports:
-      - "80:80"
+      - "80:80" 
     restart: always
     environment:
       WORDPRESS_DB_HOST: db
@@ -25,4 +25,4 @@ services:
       WORDPRESS_DB_PASSWORD: rakesh
       WORDPRESS_DB_NAME: new
 volumes:
-  db_data:
+  db_data: 
